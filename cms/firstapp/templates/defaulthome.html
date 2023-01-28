@@ -1,0 +1,195 @@
+{% block header%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CMS</title>
+    <style>
+    .footerr{
+        background-image: url();
+    }
+    .lab{
+        display: none;
+        user-select: none;
+        float: right;
+    }
+    .menu li:hover {
+      transition: 0.3s ease;
+    }
+
+    #check {
+        display: none;
+    }
+    .advimg{
+        background-image: url(https://whiltor.com/assets/img/img3/img3NoShadowNoBg.png);
+        background-repeat: no-repeat;
+    }
+    .dbb:hover,.dbb1:hover,.dbb2:hover {
+        border-bottom: 5px solid black;
+    }
+    #check1:checked~.advimg {
+           background-image: url(https://whiltor.com/assets/img/img3/img3NoShadowNoBg.png);
+    }
+    #check2:checked~.advimg {
+           background-image: url(https://whiltor.com/assets/img/img5/img5NoShadowNoBg.png);
+    }
+    #check3:checked~.advimg {
+           background-image: url(https://whiltor.com/assets/img/img4/img4NoShadowNoBg.png);
+    }
+
+    @media (max-width: 768px) {
+      .menu{
+        display: none;
+        position: absolute;
+        background-color: orange;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+      }
+    .menu li:hover {
+        display: inline-block;
+        background-color: orange;
+        transition: 0.3s ease;
+    }
+    #check:checked~.menu {
+           display: block;
+    }
+    .lab {
+      display: block;
+    }
+    .res{
+        margin-top: -30px;
+    }
+    .res1{
+        margin-top: -50px;
+    }
+    .res2{
+        margin-top: -90px;
+    }
+    .res3{
+        margin-top: -170px;
+    }
+    .res4{
+        margin-top: -90px;
+    }
+    }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="md:nav md:navbar">
+        <div class="md:flex">
+            <input id="check" type="checkbox" style="display: none;">
+            <label for="check" class="lab"><i class="fa fa-bars"></i></label>
+            <div class="md:ml-10"><img src="https://www.whiltor.com/assets/img/Whiltor.png" class="w-1/4"></div>
+
+            <ul class="md:flex float-right menu">
+                <li class="md:mr-4">
+                    <div class="border-2 border-dashed border-r-yellow-400 border-l-0 border-b-0 border-t-0 md:w-2/4 h-28 res">
+                    </div>
+                    <div class="font-bold"><a href="/" class="border-bottom-0">Home</a></div>
+                </li>
+                <li class="md:mr-4">
+                    <div class="border-2 border-dashed border-r-yellow-400 border-l-0 border-b-0 border-t-0 md:w-2/4 h-14 res1">
+                    </div>
+                    <div class="font-bold"><a href="portfolio">Portfolio</a></div>
+                </li>
+                <li class="md:mr-4">
+                    <div class="border-2 border-dashed border-r-yellow-400 border-l-0 border-b-0 border-t-0 md:w-2/4 h-24 res2">
+                    </div>
+                    <div class="font-bold"><a href="services">Services</a></div>
+                </li>
+                <li class="md:mr-4">
+                    <div class="border-2 border-dashed border-r-yellow-400 border-l-0 border-b-0 border-t-0 md:w-2/4 h-44 res3">
+                    </div>
+                    <div class="font-bold"><a href="consultancy">Consultancy</a></div>
+                </li>
+                <li class="md:mr-4">
+                    <div class="border-2 border-dashed border-r-yellow-400 border-l-0 border-b-0 border-t-0 md:w-2/4 h-24 res4">
+                    </div>
+                    <div class="font-bold"><a href="about">About</a></div>
+                </li>
+                <li class="md:mr-4">
+                    <div class="bg-yellow-400 font-bold m-8 p-2 font rounded-lg pr-4 pl-4"> <a href="contact"><i class="fa fa-phone"></i>
+                        Contact</a></div>
+                </li>
+                <li class="md:mr-4">
+                    <div class="border-2 border-dashed border-r-yellow-400 border-l-0 border-b-0 border-t-0 md:w-2/4 h-24 res4">
+                    </div>
+                    <div class="font-bold"><a href="admin">Admin</a></div>
+                </li>
+            </ul>
+
+        </div>
+        </div>
+    </nav>
+{% endblock %}
+{% block content%}
+{% endblock %}
+{% block footer%}
+<section>
+
+    <div>
+
+        <div class="grid grid-cols-4 gap-8 px-8 py-64 absolute"
+            style="background-image: url('https://whiltor.com/assets/img/SKYLINE_FOOTER_lighter-04.png');">
+
+            <div>
+                <ul>
+                    <li class="px-2 py-2 text-2xl text-blue-900 font-medium">Get in Touch</li>
+                    <li class="px-2 py-2 text-gray-500 font-medium">Don’t miss any updates of our new schemes and
+                        services!</li>
+                    <form>
+                        <input class="px-2 py-2 text-gray-500 font-medium"
+                            style="border: 1px solid rgb(34, 32, 32); margin: 5px;padding: 2px;" type="email"
+                            placeholder="Email" required><br>
+                        <input class="px-2 py-2 text-gray-500 font-medium" type="submit" value="Subscribe"
+                            style="background-color: rgb(220, 220, 35);border-radius: 10px;padding: 5px;">
+                    </form>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="px-2 py-2 text-2xl text-blue-900 font-medium">Download</li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">Home</a></li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="px-2 py-2 text-2xl text-blue-900 font-medium">Services</li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">Consultancy</a></li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">Contact</a></li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">All Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="px-2 py-2 text-2xl text-blue-900 font-medium">Connect the Network</li>
+                    <li class="px-2 py-2 text-gray-500 "><a class="px-2 " href="#"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a><a class="px-2 " href="#"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a><a class="px-2 " href="#"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a><a class="px-2 " href="#"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li class="px-2 py-2 text-gray-500 font-medium">Copyright © 2022 | Whiltor | All rights reserved
+                        | Powered by TDPVista</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
+
+{% endblock %}

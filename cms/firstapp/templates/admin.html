@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/img/icon.png" rel="icon">
+    <link href="./assets/img/icon.png" rel="apple-touch-icon">
+</head>
+
+<body style="background-color: #f2f4f8;" class="container-fluid ">
+
+    <section>
+        <div class="grid grid-cols-3">
+            <div></div>
+
+            <div class="py-8 my-48" style="overflow: hidden;
+width: 420px;
+font-family: Quicksand, arial, sans-serif;
+box-shadow: 0 0 20px rgb(0 0 0 / 5%), 0 0px 40px rgb(0 0 0 / 8%);
+border-radius: 8px;
+background: #fff;">
+                <h3 class="text-center mt-3 ">Admin Login</h3>
+                <form action="/adminhome" method="post">
+                    {% csrf_token %}
+                    <i class="fa fa-pencil mx-12 my-4 p-4"
+                        style="background-color:#ffce00 ;border-radius: 50%;"></i><input type="email" name="email"
+                        placeholder="Admin Email" required>
+                    <br>
+                    <i class="fa fa-envelope-open mx-12 my-4 p-4"
+                        style="background-color:#ffce00 ;border-radius: 50%;"></i><input type="password" name="password"
+                        placeholder="Admin Password" required>
+                    <br>
+                    <i class="fa fa-phone mx-12 my-4 p-4"
+                        style="background-color:#ffce00 ;border-radius: 50%;"></i><input type="password"
+                        placeholder="Confirm Password" required>
+                    <br>
+
+                    <input type="submit" value="Submit"
+                        style="background-color:#ffce00 ;border-radius: 20px;font-size: 25px;font-weight: bold;"
+                        class=" my-4 mx-40 p-2">
+                </form>
+
+            </div>
+        <div></div>
+        </div>
+    </section>
+</body>
+
+</html>

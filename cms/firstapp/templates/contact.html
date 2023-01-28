@@ -1,0 +1,39 @@
+{% extends 'default.html' %}
+{% block content %}
+<section>
+    <div>
+    <div class="h-full" style="background-image: url('https://whiltor.com/assets/img/contact%20bg-01.png');
+    background-size: contain;
+    padding-right: 5%;
+    background-position: left;
+    background-repeat: no-repeat;">
+        
+        <div class="flex flex-row-reverse">
+        <div style="overflow: hidden;
+    width: 420px;
+    font-family: Quicksand, arial, sans-serif;
+    box-shadow: 0 0 20px rgb(0 0 0 / 5%), 0 0px 40px rgb(0 0 0 / 8%);
+    border-radius: 8px;
+    background: #fff;">
+            <h3 class="text-center mt-3 ">Contact us</h3>
+            <form action="contactTask" method="post">
+                {% csrf_token %}
+                <i class="fa fa-pencil mx-12 my-4 p-4" style="background-color:#ffce00 ;border-radius: 50%;"></i><input name="name" type="text" placeholder="Full Name" required>
+                <br>
+                <i class="fa fa-envelope-open mx-12 my-4 p-4" style="background-color:#ffce00 ;border-radius: 50%;"></i><input name="email" type="email" placeholder="E-mail" required>
+                <br>
+                <i class="fa fa-phone mx-12 my-4 p-4" style="background-color:#ffce00 ;border-radius: 50%;"></i><input name="contact" type="text" placeholder="Contact Number" required>
+                <br>
+                <i class="fa fa-telegram mx-12 my-4 p-4" style="background-color:#ffce00 ;border-radius: 50%;"></i><input type="text" name="query" placeholder="Query" required>
+
+                <input type="submit" value="Submit" style="background-color:#ffce00 ;border-radius: 20px;font-size: 25px;font-weight: bold;" class=" my-4 mx-40 p-2" >
+            </form>
+
+        </div>
+        <img src="https://whiltor.com/assets/img/img22/img22NoShadowNoBg.png">
+        </div>
+        
+    </div>
+    </div>
+</section>
+{% endblock %}

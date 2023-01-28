@@ -1,0 +1,55 @@
+{% extends 'defaultadmin.html' %}
+{% block content %}
+<section>
+    <div class="grid grid-cols-4 place-items-center">
+        {% for x in rec %}
+
+        <div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg" style="margin: 30px;background-color: white;">
+                <div class="px-6 py-4">
+                    <i class="fa fa-{{x.faicon}} text-4xl" style="color: {{x.color}};"></i>
+                    <p class="text-gray-700 text-base pb-6 " style="font-size: 30px;"></p>{{ x.heading }}
+                    <p class="text-gray-700 text-base">
+                        {{ x.content }}
+                    </p>
+                    <a href="cardTaskdone?bid={{x.id}}" class="text-2xl font-bold text-blue-800 p-4">Delete</a>
+                    <a href="#" class="text-2xl font-bold text-blue-800 p-4">Update</a>
+                </div>
+                <div class="max-w-sm rounded-b-sm overflow-hidden shadow-lg h-2 "
+                    style="background-color: {{x.color}};">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+    </div>
+
+    <div class="grid grid-cols-4 place-items-center m-8">
+        {% for x in rec1 %}
+
+        <div class="shadow-2xl p-8 m-4">
+            <img src="{{x.image}}" class="-mt-20" width="400px" height="10px">
+            <h1 class="md:text-3xl">{{x.heading}}</h1>
+            <p>{{x.content}}</p>
+            <a href="cardTaskwork?bid={{x.id}}" class="text-2xl font-bold text-blue-800 p-4">Delete</a>
+            <a href="#" class="text-2xl font-bold text-blue-800 p-4">Update</a>
+
+        </div>
+
+        {% endfor %}
+    </div>
+
+    <div class="sm:block md:grid grid-cols-2 lg:grid grid-cols-4 m-12">
+        {% for x in rec2 %}
+        <div class="shadow-2xl w-80 p-12 pl-10">
+            <img src="{{x.image}}" alt="">
+            <h1 class="md:mt-60 md:text-3xl">{{x.title}}</h1>
+            <a href="cardTaskbenifits?bid={{x.id}}" class="text-2xl font-bold text-blue-800 p-4">Delete</a>
+            <a href="#" class="text-2xl font-bold text-blue-800 p-4">Update</a>
+        </div>
+
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

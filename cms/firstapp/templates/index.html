@@ -1,0 +1,251 @@
+{% extends 'defaulthome.html' %}
+{% block content%}
+<div class="grid grid-cols-3">
+    <div>
+        <p class="font-bold text-6xl text-gray-700 pl-32 pt-32">Transform</p>
+        <p class=" text-4xl text-gray-700 pl-32">Your Vision With Whiltor</p>
+        <p class=" text-xl text-gray-700 pl-32">Connect with the most trusted and satisfactory consultancy firm all
+            round the globe and Drive Your Journey To Peek!</p>
+    </div>
+    <div class="col-span-2">
+        <img class="px-16 py-8" src="https://whiltor.com/assets/img/homelanding/home.png">
+    </div>
+</div>
+
+<!-- ================section 1 =============== -->
+<section>
+    <div class="grid grid-cols-4 px-16 place-items-center">
+        {% for x in rec %}
+
+        <div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg" style="margin: 30px;background-color: white;">
+                <div class="px-6 py-4">
+                    <i class="fa fa-{{x.faicon}} text-4xl" style="color: {{x.color}};"></i>
+                    <p class="text-gray-700 text-base pb-6 " style="font-size: 30px;"></p>{{ x.heading }}
+                    <p class="text-gray-700 text-base">
+                        {{ x.content }}
+                    </p>
+                </div>
+                <div class="max-w-sm rounded-b-sm overflow-hidden shadow-lg h-2 "
+                    style="background-color: {{x.color}};">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- ===============section 2========== -->
+<section>
+    <div class="grid grid-cols-1 place-items-center py-32">
+        <p class=" text-gray-900 text-4xl">Achieve Your Dynamic Business Goals and</p>
+        <p class=" text-gray-700 text-2xl py-8 ">Build a Better Future with Whiltor</p>
+        <div class="grid grid-cols-2 place-items-center">
+            <div><img src="https://whiltor.com/assets/img/img21/img21NoShadowNoBg.png"></div>
+            <div class="pr-16">Whiltor ensures your company's long-term success by leveraging our expertise and
+                conceptual understanding. Our goal is to carry out your plan, and your faith is our greatest strength.
+                It's never been easier to connect with consulting services and launch your company into a new era of
+                quick growth by implementing cutting-edge technology and marketing strategies.
+
+                <div class="grid grid-cols-3 place-items-center py-4 px-8">
+                    <div>
+
+                        <i class="fa fa-desktop text-red-500 text-4xl px-8 pt-8"></i>
+                        <P>Know About Us</P>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-group text-red-500 text-4xl px-8 pt-8"></i>
+                        <p>Connect With Us</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-signal text-red-500 text-4xl px-8 pt-8"></i>
+                        <p>Grow With Us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =====================section 3========== -->
+<img src="https://whiltor.com/assets/img/scut1.png">
+<div style="background-color: #182845"><br>
+    <center>
+        <h4 class="md:text-6xl" style="color:white;">GET A GLIMPSES</h4>
+    </center><br><br>
+    <center>
+        <div class="md:container md:gap-20">
+            <div class="md:grid md:grid-cols-2">
+                <div class="md:ml-10 pt-10">
+                    <iframe src="https://www.youtube.com/embed/S-WPnIDovk4" width="88%" height="240%"></iframe>
+                </div>
+                <div class="md:ml-10 pt-10">
+                    <iframe src="https://www.youtube.com/embed/QKL46wxu_ek" width="88%" height="240%"></iframe>
+                </div>
+            </div>
+        </div>
+    </center> <br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<img src="https://whiltor.com/assets/img/scut2.png">
+<br><br><br><br>
+
+
+<br><br><br><br>
+<center>
+    <h4 class="md:text-4xl" style="color:black;">OUR FEATURING SERVICES</h4>
+</center><br><br><br><br>
+<div class="container md:ml-40">
+    <div class="md:grid md:grid-cols-3 gap-30">
+        <div class="ml-3">
+            <img class="ml-10" src="https://www.whiltor.com/assets/img/icons8-customer-service-128.png"
+                style="border-radius:50%;"><br><br>
+            <button>Branding</button><br><br><br>
+            <div>create a powerfull brand image that<br>that stand out in the market and increase<br>your audience
+                by ten folds </div>
+
+        </div>
+        <div class="ml-3">
+            <img class="ml-10" src="https://www.whiltor.com/assets/img/icons8-idea-96.png"
+                style="border-radius:50%;"><br><br>
+            <button>Product Developments</button><br><br><br>
+            <div>create a powerfull brand image that<br>that stand out in the market and increase<br>your audience
+                by ten folds </div>
+
+        </div>
+        <div class="ml-3">
+            <img class="ml-10" src="https://www.whiltor.com/assets/img/icons8-technology-150.png"
+                style="border-radius:50%;" width="120px" height="110px"><br><br>
+            <button>Graphic Solutions</button><br><br><br>
+            <div>create a powerfull brand image that<br>that stand out in the market and increase<br>your audience
+                by ten folds </div>
+
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+<!-- ================work width whiltor=========== -->
+<center>
+    <h2 class="md:text-4xl" style="font-weight:bold;">WORK WITH WHILTOR</h2><br>
+    <h4 class="md:text-2xl">simple steps to works with whiltor</h4>
+</center>
+<br><br><br>
+
+
+<div class="grid grid-cols-4 place-items-center m-8">
+    {% for x in rec1 %}
+
+    <div class="shadow-2xl p-8 m-4">
+        <img src="{{x.image}}" class="-mt-20" width="400px" height="10px">
+        <h1 class="md:text-3xl">{{x.heading}}</h1>
+        {{x.content}}
+    </div>
+
+    {% endfor %}
+</div>
+
+
+<br><br><br><br>
+<center>
+    <h2 class="md:text-5xl" style="font-weight:bold;">COLLABORATE WITH WHILTOR</h2>
+    <br><br><br>
+</center>
+
+<div class="container md:ml-16">
+    <div class="md:grid md:grid-cols-2">
+        <div class="ml-20">
+            <img src="https://www.whiltor.com/assets/img/3d-hands-fun-and-wild-handshake-2.png" width="60%">
+        </div>
+        <div class="md:-mr-8">
+            Collaboration is Always Better
+            For a healthy and continual growth, connect with whiltor. Working with Whiltor provides you an edge
+            over competitors in your field of expertise, allowing you to expand your business. We provide
+            everything you need for your business to succeed, from consulting to development.<br><br>
+            <button style="float:left">contact us</button>
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+
+<!-- =========benifits============= -->
+<center>
+    <h2 class="md:text-5xl" style="font-weight:bold;">BENIFITS</h2><br>
+    <h5 class="md:text-xl">Whiltor offers you a full range of services, from planning to execution.</h5><br><br><br>
+</center>
+<div class="container md:ml-20">
+    <div class=" block lg:grid grid-cols-4 m-12">
+        {% for x in rec2 %}
+        <div class="shadow-2xl w-80 p-12 pl-10">
+            <i class="fa fa-{{x.image}}" alt=""></i>
+            <h1 class="md:mt-60 md:text-3xl">{{x.title}}</h1>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+
+<!-- ==================================== -->
+
+<br><br><br><br>
+<center>
+    <h2 class="md:text-5xl" style="font-weight:bold;">ADVANTAGES OF CHOOSING US</h2>
+    <h5 class="md:text-4xl">Our Work Speak For Us.</h5><br><br><br>
+</center>
+
+
+<div class="container md:ml-20">
+    <div class="md:grid md:grid-cols-2 gap-10">
+        <input id="check1" type="radio" name="advcheck" style="display: none;">
+        <input id="check2" type="radio" name="advcheck" style="display: none;">
+        <input id="check3" type="radio" name="advcheck" style="display: none;">
+        <div>
+            <div class="border-4 md:pt-8 md:pl-5 md:pb-9 md:h-40 dbb">
+                <label for="check1">
+                    Personalised plans for your requirements
+                    For us, your vision is everything, and we<br> will first understand your business and goals before
+                    recommending<br> the best plans for your growth.
+                </label>
+            </div><br><br><br>
+
+            <div class="border-4 md:pt-8 md:pl-5 md:pb-9 md:h-40 dbb1">
+                <label for="check2">
+                    Best solutions tailored to your vision
+                    Before the Whiltor, it was never so simple to turn your digital<br> visions into reality. Connect
+                    and experience excellence for yourself.
+                </label>
+            </div><br><br><br>
+
+            <div class="border-4 md:pt-8 md:pl-5 md:pb-9 md:h-40 dbb2">
+                <label for="check3">
+                    Boost your brand's visibility in market
+                    We at Whiltor deliver a fully customized solutions that will <br>makes your product stand out and
+                    shine in the marketplace.
+                </label>
+            </div>
+        </div>
+        <div class="advimg w-full h-full container">
+        </div>
+    </div>
+    <div class="md:mb-60"></div>
+
+    <div class="container md:ml-0">
+        <div class="md:grid md:grid-cols-3 gap-10 shadow-2xl">
+            <div class="p-12">
+                <div>
+                    <h1>Request a callback</h1>
+                    <h5>Are you stuck on something that is interfering with your dream project? Connect with us
+                        now. We offer solutions for all of your challenges, from project development to branding
+                        and marketing, we can meet all of your requirements. With just a phone call, you may
+                        have all of your services delivered right to your door.</h5>
+                </div>
+            </div>
+            <div>
+                <img src="https://whiltor.com/assets/img/book-service.png"
+                    class="md:w-80 md:h-80 content-center animate-bounce" style="margin-top: -1px;">
+            </div>
+            <div class="md:pt-10 md:pl-10">
+                <button class="bg-blue-400 font-bold m-8 p-2 font rounded-xl pr-12 pl-12">Call us</button>
+            </div>
+        </div>
+    </div> <br><br><br><br>
+    {% endblock %}

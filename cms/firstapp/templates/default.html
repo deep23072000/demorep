@@ -1,0 +1,114 @@
+{% block header %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/img/icon.png" rel="icon">
+    <link href="./assets/img/icon.png" rel="apple-touch-icon">
+</head>
+
+<body style="background-color: #f2f4f8;" class="container-fluid">
+    <nav class=" pt-6">
+        <div class="grid grid-cols-2">
+            <img src="https://whiltor.com/assets/img/Whiltor.png" class=" px-6 h-16 sm:h-16 md:h-16 lg:h-12  ">
+
+            <div
+                class=" sm:h-64 sm:block        md:h-32 md:flex flex-row-reverse      lg:h-32 lg:flex flex-row-reverse">
+                <ul class="lg:flex md:flex">
+                    <li>
+                        <a href="/" class=" ml-5 lg:ml-5 md:ml-5 sm:ml-5"> Home </a>
+                    </li>
+                    <li>
+                        <a href="portfolio" class=" ml-5 lg:ml-5 md:ml-5 sm:ml-5"> Portfolio </a>
+                    </li>
+                    <li>
+                        <a href="services" class="ml-5 lg:ml-5 md:ml-5 sm:ml-5"> Services </a>
+                    </li>
+                    <li>
+                        <a href="/consultancy" class="ml-5 lg:ml-5 md:ml-5 sm:ml-5"> Consultancy </a>
+                    </li>
+                    <li>
+                        <a href="about" class="ml-5 lg:ml-5 md:ml-5 sm:ml-5"> About Us </a>
+                    </li>
+                    <li>
+                        <a href="contact" class="ml-5 lg:ml-5 md:ml-5 sm:ml-5"
+                            style="background-color: yellow;border: 5px solid yellow;border-radius: 5px;"> Contact </a>
+                    </li>
+                    <li>
+                        <a href="admin" class="ml-5 lg:ml-5 md:ml-5 sm:ml-5"> Admin login </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+{% endblock %}
+{% block content %}
+{% endblock %}
+{% block footer %}
+<section>
+
+    <div>
+
+        <div class="grid grid-cols-4 gap-8 px-8 py-64 absolute"
+            style="background-image: url('https://whiltor.com/assets/img/SKYLINE_FOOTER_lighter-04.png');">
+
+            <div>
+                <ul>
+                    <li class="px-2 py-2 text-2xl text-blue-900 font-medium">Get in Touch</li>
+                    <li class="px-2 py-2 text-gray-500 font-medium">Don’t miss any updates of our new schemes and
+                        services!</li>
+                    <form>
+                        <input class="px-2 py-2 text-gray-500 font-medium"
+                            style="border: 1px solid rgb(34, 32, 32); margin: 5px;padding: 2px;" type="email"
+                            placeholder="Email" required><br>
+                        <input class="px-2 py-2 text-gray-500 font-medium" type="submit" value="Subscribe"
+                            style="background-color: rgb(220, 220, 35);border-radius: 10px;padding: 5px;">
+                    </form>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="px-2 py-2 text-2xl text-blue-900 font-medium">Download</li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">Home</a></li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="px-2 py-2 text-2xl text-blue-900 font-medium">Services</li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">Consultancy</a></li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">Contact</a></li>
+                    <li class="px-2 py-2 text-gray-500 font-medium"><a href="#">All Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="px-2 py-2 text-2xl text-blue-900 font-medium">Connect the Network</li>
+                    <li class="px-2 py-2 text-gray-500 "><a class="px-2 " href="#"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a><a class="px-2 " href="#"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a><a class="px-2 " href="#"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a><a class="px-2 " href="#"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li class="px-2 py-2 text-gray-500 font-medium">Copyright © 2022 | Whiltor | All rights reserved
+                        | Powered by TDPVista</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
+{% endblock %}

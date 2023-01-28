@@ -1,0 +1,10 @@
+.header2{
+    position:absolute;
+    top: 0;
+    right: -100%;
+    transition: all 1s ease-in-out;
+}
+
+#check:checked`.header2{
+    right:0%;
+}
